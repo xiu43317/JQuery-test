@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="src/index.css" >
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>CHING YUE RIBBON</title>
+</head>
+<body>
+    <script defer src="./src/index.js"></script>
+    <!-- responsible header -->
+    <div class="jumbotron text-center"style="margin-bottom:0;">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-5">
+                    <img src="./img/logo.png" id="logo">
+                </div>
+                <div class="col-sm-7" style="padding: 25px;">
+                    <h1>CHING YUE RIBBON</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- use bootstrap navbar and scrollible button -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark navbar-inverse">
+        <a class="navbar-brand" href="#home">Home</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="nav navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <!-- inside menu -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">Items</a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#picot">PICOT</a></li>
+                    <li><a class="dropdown-item" href="#satin">SATIN</a></li>
+                    <li><a class="dropdown-item" href="#grosgrain">GROSGRAIN</a></li>
+                    <li><a class="dropdown-item" href="#oganza">OGANZA</a></li>
+                    <li><a class="dropdown-item" href="#velvet">VELVET</a></li>
+                    <li><a class="dropdown-item" href="#metallic">METALLIC RIBBON</a></li>
+                    <li><a class="dropdown-item" href="#taffeta">TAFFETA</a></li>   
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact Us</a>
+              </li>    
+            </ul>
+          </div> 
+    </nav>
+    
+    <!--parallax view with aos animation-->
+    <div class="parallax-window" data-aos="fade-down" data-aos-earsing="linear" data-aos-duration="1500">
+        <div class="hero-text">
+            <h1 style="font-size:50px">Welcome to Ching Yue</h1>
+          </div>
+    </div>
+    <!--show ajax content-->
+    <div class="page"></div>
+    <!--default index content-->
+    <div id="mainpage" class="container-fluid" style="margin-top: 30px;">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="box"> 
+                    <img id="pic1" src="./img/aboutus.jpg" data-aos="fade-down-right" data-aos-earsing="linear" data-aos-duration="1500"/>
+                    <div id="touch">touch</div>
+                    <div class="box-hover-text">
+                      <h2 class="box-body">About us</h2>
+                      <p class="box-body">Ching Yue Ribbon Co., Ltd.is a professional ribbon manufacturer established established in 1983.We manufacture, supply and export ribbon in Taiwan.</p>
+                      <div class="box-see-more">
+                        <a href="#about">see more</a>
+                      </div>
+                    </div>
+                </div>
+                <hr class="d-sm-none">
+            </div>
+            <div class="col-md-4">
+                <div class="box">
+                    <img id="pic2" src="./img/products.jpg" data-aos="fade-up" data-aos-earsing="linear" data-aos-duration="1500"/>
+                    <div id="touch">touch</div>
+                    <div class="box-hover-text">
+                      <h2 class="box-body">Our products</h2>
+                      <p class="box-body">We provide a variety of ribons such as satin, oganza, grosgrain, metallic, taffeta, picot etc..</p>
+                      <div class="box-see-more">
+                        <a href="#photoindex">see more</a>
+                      </div>
+                    </div>
+                </div>
+                <hr class="d-sm-none">
+            </div>
+            <!--toggle the dialogue window to enter messages-->
+            <div class="col-md-4">
+                <div class="box">
+                    <img id="pic3" src="./img/contactus.jpg" data-aos="fade-down-left" data-aos-earsing="linear" data-aos-duration="1500"/>
+                    <div id="touch">touch</div>
+                    <div class="box-hover-text">
+                      <h2 class="box-body">Ask us</h2>
+                      <p class="box-body">If you have any question, do not hesitate to ask us about what kind of ribbons you are interested in </p>
+                      <div class="box-see-more">
+                        <a data-toggle="modal" href="#exampleModal">messages</a>
+                      </div>
+                    </div>
+                </div>
+               <!--dialogue function-->
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <!--dialogue header-->
+                            <div class="modal-header">
+                                <!--dialogue title-->
+                                <h5 class="modal-title" id="exampleModalLabel">Messages</h5>
+                                <!--x mark to close window-->
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                             <!--dialogue body-->
+                            <div class="modal-body" style="text-align: left;">
+                                <h6>Enter your name</h6>
+                                <input id="userName" style="width: 100%;margin-bottom: 10px;" placeholder="Your Name">
+                                <h6>Enter your e-mail</h6>
+                                <input id="email" style="width: 100%;margin-bottom: 10px;" placeholder="Enter your e-mail here" style="text-align: center;">
+                                <h6>Enter your requirement</h6>
+                                <textarea id="content" style="width: 100%; min-height: 250px;" placeholder="Enter your requirement here"></textarea>
+                            </div>
+                            <!--dialogue footer-->
+                            <div class="modal-footer">
+                              <!--close button-->
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                <!--send the message-->
+                                <button id="sendMail" type="submit" class="btn btn-primary">Send</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="d-sm-none">
+            </div>
+          </div>
+        </div> 
+        </div>
+    </div>
+    <!--footer-->
+      <div class="footer">
+        <div class="footer-copyright text-center py-3">
+            Copyright © 2020 ChingYue All Rights Reserved.
+        </div>
+      </div>
+</body>
+</html>
