@@ -7,6 +7,6 @@ This project was designed for one of my familiar fabric manufacturers. I use JQu
 <a href="https://www.w3schools.com/">w3schools</a><br>
 <a href="https://blog.huli.tw/2019/09/18/spa-common-problem-about-router/">淺談新手在學習 SPA 時的常見問題 byhuli</a><br>
 <a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/">getbootstrap</a><br>
-<a href="https://fontawesome.com/">fontawesome</P>
-<a href="https://github.com/PHPMailer/PHPMailer">PHPMailer</a>
+<a href="https://fontawesome.com/">fontawesome</a><br>
+<a href="https://github.com/PHPMailer/PHPMailer">PHPMailer</a><br>
 <a href="https://www.php.net/manual/en/function.mail.php">PHP Send mail</a>
