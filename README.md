@@ -6,6 +6,6 @@ This project was designed for one of my familiar fabric manufacturers. I use JQu
 <a href="https://www.w3schools.com/">w3schools</a><br>
 <a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/">getbootstrap</a><br>
 <a href="https://fontawesome.com/">fontawesome</a><br>
-<a href="https://michalsnik.github.io/aos/">Animation On Scroll Library</a><br>
 <a href="https://awpluway.pixnet.net/blog/post/364195038">jQuery中ajax用法</a><br>
+<a href="https://michalsnik.github.io/aos/">Animation On Scroll Library</a><br>
 <a href="https://blog.huli.tw/2019/09/18/spa-common-problem-about-router/">淺談新手在學習 SPA 時的常見問題 by huli</a><br>
